@@ -3,6 +3,7 @@ const sideMenu = document.querySelector(".side-menu");
 const main = document.querySelector(".main");
 const socialIcons = document.querySelector(".social-icons");
 const callToActionButton = document.querySelector(".action-button-container");
+const whatsappContainer = document.querySelector(".whatsapp-container");
 
 // Función para ocultar el navbar y mostrar el menú lateral en pantallas grandes
 function showSideMenu() {
@@ -15,8 +16,8 @@ function showSideMenu() {
   document.body.classList.add("bodystyle");
   //cambio de estilos para el main
   main.classList.add("mainstyle");
-  //cambio de estilo para el boton del call to action
-  callToActionButton.classList.add("");
+  //No mostrar boton wassap
+  whatsappContainer.classList.add("d-none");
 }
 
 // Función para restablecer el navbar y ocultar el menú lateral en pantallas pequeñas
@@ -29,7 +30,6 @@ function hideSideMenu() {
   //cambio de estilos para el main
   main.classList.remove("mainstyle");
   //cambio de estilo para el boton del call to action
-  callToActionButton.classList.remove("");
 }
 
 // Función para cargar el contenido del menú lateral
@@ -47,17 +47,18 @@ function loadSideMenuContent() {
     <div class="  social-icons-container ">
       <div class="   inner-social-icons-container " ">
         <a href="https://www.facebook.com/javiAbalosArq3d/" target="_blank" class="text-decoration-none  ">
-          <img src="img/face-icon.svg" alt="Facebook" height="40px">
+          <img src="img/face-icon.svg" alt="Facebook" height="30px">
         </a>
         <a href="https://www.behance.net/javier_abalos" target="_blank" class="text-decoration-none  ">
-          <img src="./img/bhlogo.svg" alt="Twitter" height="40px">
+          <img src="./img/bhlogo.svg" alt="Twitter" height="30px">
         </a>
         <a href="https://www.instagram.com/javi_abalos_arq3d/" target="_blank" class="text-decoration-none ">
-          <img src="./img/instalogo.svg" alt="Instagram" height="40px">
+          <img src="./img/instalogo.svg" alt="Instagram" height="30px">
         </a>
       </div>
     </div>
   </div>
+  
   `;
 
   // Asigna el contenido al menú lateral

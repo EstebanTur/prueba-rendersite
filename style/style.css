@@ -4,12 +4,16 @@ body {
   font-family: "poppins";
   text-align: center;
   height: 100%;
+
   /* SIDE MENU */
 }
 .side-menu {
 }
 .side-menu a {
   color: rgba(255, 255, 255, 0.75);
+}
+.side-menu a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 /* Iconos de redes */
 .social-icons-container {
@@ -35,6 +39,7 @@ body {
 }
 .carousel-item img {
   max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -50,25 +55,29 @@ body {
 
   border: none;
   padding: 15px 30px; /* Espaciado interno del botón */
-  font-size: 16px;
+
   font-weight: bold;
-  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 992px) {
+  /* General, html and body */
+
   /* Navbar */
   #offcanvasNavbar {
     background-color: #000000 !important;
   }
-
+  /* Call to action button */
+  .action-button-container {
+    margin-top: 10vh !important;
+  }
   .custom-button {
     font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
     padding: 12px 24px; /* Espaciado interno más pequeño para móviles */
   }
-
+  /* Carousel */
   .carousel {
     height: 50vh;
   }
@@ -76,9 +85,25 @@ body {
   .carousel-inner,
   .carousel-inner img {
     height: 100%;
+    object-fit: contain;
   }
   .carousel-item {
     text-align: center;
+  }
+  /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */ /* whatsapp */
+  .whatsapp-container {
+    position: fixed;
+    left: 40vw;
+    top: 55vh;
+    z-index: 1000;
+  }
+  .whatsapp-container img {
+    height: 90px;
+  }
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
   }
 }
 
@@ -91,9 +116,14 @@ body {
 /* Estilos para pantallas grandes (más de 768px) */
 .bodystyle {
   display: flex;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 .mainstyle {
 }
 .action-button-container-desktop {
+}
+@media (max-width: 768px) {
+  .action-button-container {
+    margin-top: 5vh !important;
+  }
 }
