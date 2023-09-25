@@ -111,7 +111,7 @@ body {
 /* Modificar el ancho horizontal del offcanvas */
 
 .offcanvas-start {
-  width: 50%;
+  width: 40%;
 }
 
 /* Estilos para pantallas grandes (más de 768px) */
@@ -127,4 +127,16 @@ body {
   .action-button-container {
     margin-top: 5vh !important;
   }
+}
+
+/* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */
+.services-dropdown-container {
+}
+.dropdown-item {
+  position: relative;
+  text-decoration: none;
+}
+.dropdown-item a {
+  color: aliceblue;
+  text-decoration: none;
 }

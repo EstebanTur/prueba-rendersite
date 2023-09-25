@@ -20,203 +20,257 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div class="container-fluid p-0  ">
-      <div class="row mx-0   w-100">
-        <div
-          class="side-menu d-none mx-0 col-lg-2 col-md-4 container-fluid  "
-        >
+    <div class="container-fluid p-0">
+      <div class="row mx-0 w-100">
+        <div class="side-menu d-none mx-0 col-lg-2 col-md-4 container-fluid">
           <!-- Contenido del menú lateral se agregará con JavaScript -->
         </div>
-    <nav class="navbar navbar-dark col-12 bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"
-          ><img src="./img/logo menu.png" height="40px" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start bg-dark"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <a href=""
-              ><img src="./img/logo menu.png" height="20px" alt=""
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark col-12 bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"
+              ><img src="./img/logo menu.png" height="40px" alt=""
             /></a>
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn-close text-reset btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start bg-dark"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <a href=""
+                  ><img src="./img/logo menu.png" height="20px" alt=""
+                /></a>
+                <button
+                  type="button"
+                  class="btn-close text-reset btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/work.html"
+                      >Work</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/contact.html"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
+        </nav>
+        <!-- main --><!-- main --><!-- main --><!-- main --><!-- main --><!-- main -->
+        <main class="main container-fluid col-12">
+          <div class="container px-0">
+            <div class="container px-0">
+              <h2 class="">Services TITULAR</h2>
+              <p class="">
+                lorem ipsum akala kalalalorem imsum akalaka klaka kajaka aakljsd
+                jsjja puto el que leelorem imsum akalaka klaka kajaka aakljsd
+                jsjja puto el que lee
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="container">
+                <div class="container mb-2 px-0">
+                  <h2 class="">Services</h2>
+                  <p class="">
+                    lorem ipsum akala kalalalorem imsum akalaka klaka kajaka
+                    aakljsd jsjja puto el que leelorem imsum akalaka klaka
+                    kajaka aakljsd jsjja puto el que lee
+                  </p>
+                </div>
+                <div
+                  id="services-dropdown-container"
+                  class="dropdown container px-0"
                 >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/services.html"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/work.html"
-                  >Work</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle btn-dark"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Caracteristicas
+                  </button>
+                  <ul
+                    id="services-dropdown-menu"
+                    class="dropdown-menu dropdown-menu bg-transparent mx-auto"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="dropdown-item">
+                      <a href="">Web development</a>
+                    </li>
+                    <li class="dropdown-item"><a href="">3D Modeling</a></li>
+                    <li class="dropdown-item">
+                      <a href="">Exterior rendering</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="">Interior rendering</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="">Forniture and Product rendering</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="">360/VR Rendering</a>
+                    </li>
+                    <li class="dropdown-item"><a href="">Animation</a></li>
+                    <li class="dropdown-item">
+                      <a href="">Web development</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="">Web development</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 d-none">
+                  <p id="" class="">Descripcion vinculada al listado.</p>
+                  <p id="p-2" class="">
+                    Texto descriptivo numero 1.Texto descriptivo numero 1.
+                  </p>
+                  <p id="p-3" class="">
+                    Texto descriptivo numero 2.Texto descriptivo numero 2.
+                  </p>
+                  <p id="p-4" class="">
+                    Texto descriptivo numero 3.Texto descriptivo numero 3.
+                  </p>
+                  <p id="p-5" class="">
+                    Texto descriptivo numero 4.Texto descriptivo numero 4.
+                  </p>
+                  <p id="p-6" class="">
+                    Texto descriptivo numero 5.Texto descriptivo numero 5.
+                  </p>
+                  <p id="p-7" class="">
+                    Texto descriptivo numero 6.Texto descriptivo numero 6.
+                  </p>
+                  <p id="p-8" class="">
+                    Texto descriptivo numero 7.Texto descriptivo numero 7.
+                  </p>
+                  <p id="p-9" class="">
+                    Texto descriptivo numero 8.Texto descriptivo numero 8.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <img
+                  class="img-fluid"
+                  id="img-1"
+                  src="./img/001_CASA_ALFREDO_BERN_CAM_ESTAR_00.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-2"
+                  src="./img/001_BOC_COMEDOR_LN_NS_CAM02.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-3"
+                  src="./img/001_CASA_ALFREDO_BERN_CAM_FRENTEO_01.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-4"
+                  src="./img/004_CASA_MAGDALENA_DAY_COC_01_02.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-5"
+                  src="./img/004_CASA_MAGDALENA_DAY_COC_02_01.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-6"
+                  src="./img/004_CASA_MAGDALENA_DAY_COC_03_00.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-7"
+                  src="./img/005_CASA_DALVIAN_CAM_04_PATIO_03.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-8"
+                  src="./img/005_CASA_DALVIAN_CAM_05_GALERIA_01.jpg"
+                  alt=""
+                />
+                <img
+                  class="img-fluid"
+                  id="img-9"
+                  src="./img/021_440_JS_FOUNDATION_01.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
-    <main class="main">
-    <div class="container">
-      <div class="">
-        <h2 class="">Services TITULAR</h2>
-        <p class="">
-          lorem ipsum akala kalalalorem imsum akalaka klaka kajaka aakljsd jsjja
-          puto el que leelorem imsum akalaka klaka kajaka aakljsd jsjja puto el
-          que lee
-        </p>
-      </div>
-      <div class="container col-12">
-        <div class="">
-          <div class="">
-            <h2 class="">Services</h2>
-            <p class="">
-              lorem ipsum akala kalalalorem imsum akalaka klaka kajaka aakljsd
-              jsjja puto el que leelorem imsum akalaka klaka kajaka aakljsd
-              jsjja puto el que lee
-            </p>
+        </main>
+        <footer class="footer container-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center text-md-left">
+                <p>
+                  @2023 Brick Visual Solutions Zrt. Politica de
+                  privacidad-Terminos y condiciones. info@brickvisual.com
+                  <span>+36300724869</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <ul class="col-6">
-              <li id="">Web development</li>
-              <li id="">3D Modeling</li>
-              <li id="">Exterior rendering</li>
-              <li id="">Interior rendering</li>
-              <li id="">Forniture and Product rendering</li>
-              <li id="">360/VR Rendering</li>
-              <li id="">Animation</li>
-              <li id="">Web development</li>
-              <li id="">Web development</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <p id="" class="">Descripcion vinculada al listado.</p>
-            <p id="p-2" class="">Un chorizo.</p>
-            <p id="p-3" class="">Una morsilla.</p>
-            <p id="p-4" class="">Un choclito.</p>
-            <p id="p-5" class="">Ensaladita.</p>
-            <p id="p-6" class="">Matecito.</p>
-            <p id="p-7" class="">Una papita.</p>
-            <p id="p-8" class="">Un manga.</p>
-            <p id="p-9" class="">Un anime.</p>
-          </div>
-        </div>
-        <div class="col-6">
-          <img
-            class="img-fluid"
-            id="img-1"
-            src="./img/001_CASA_ALFREDO_BERN_CAM_ESTAR_00.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-2"
-            src="./img/001_BOC_COMEDOR_LN_NS_CAM02.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-3"
-            src="./img/001_CASA_ALFREDO_BERN_CAM_FRENTEO_01.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-4"
-            src="./img/004_CASA_MAGDALENA_DAY_COC_01_02.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-5"
-            src="./img/004_CASA_MAGDALENA_DAY_COC_02_01.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-6"
-            src="./img/004_CASA_MAGDALENA_DAY_COC_03_00.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-7"
-            src="./img/005_CASA_DALVIAN_CAM_04_PATIO_03.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-8"
-            src="./img/005_CASA_DALVIAN_CAM_05_GALERIA_01.jpg"
-            alt=""
-          />
-          <img
-            class="img-fluid"
-            id="img-9"
-            src="./img/021_440_JS_FOUNDATION_01.jpg"
-            alt=""
-          />
-        </div>
+        </footer>
       </div>
     </div>
-    <footer class="footer container-fluid  ">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center text-md-left">
-            <p>
-              @2023 Brick Visual Solutions Zrt. Politica de
-              privacidad-Terminos y condiciones. info@brickvisual.com
-              <span>+36300724869</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-</div>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"
-></script>
-<script src="/js/main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
