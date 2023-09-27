@@ -143,3 +143,11 @@ body {
   color: aliceblue;
   text-decoration: none;
 }
+
+/* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */
+@media (min-width: 768px) {
+  form {
+    width: 40%;
+    margin-left: 30%;
+  }
+}

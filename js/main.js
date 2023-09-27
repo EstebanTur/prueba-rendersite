@@ -4,6 +4,7 @@ const main = document.querySelector(".main");
 const socialIcons = document.querySelector(".social-icons");
 const callToActionButton = document.querySelector(".action-button-container");
 const whatsappContainer = document.querySelector(".whatsapp-container");
+const servicesList = document.querySelector("#services-dropdown-container");
 
 // Función para ocultar el navbar y mostrar el menú lateral en pantallas grandes
 function showSideMenu() {
@@ -26,7 +27,7 @@ function hideSideMenu() {
   sideMenu.classList.add("d-none"); // Oculta el menú lateral
   sideMenu.classList.remove("col-2");
   main.classList.remove("col-lg-10"); // Restablece el ancho del main
-  main.classList.add("col-12 "); // Restablece el ancho del main a 12 columnas en pantallas pequeñas
+  main.classList.add("col-12"); // Restablece el ancho del main a 12 columnas en pantallas pequeñas
   //cambio de estilos para el main
   main.classList.remove("mainstyle");
   //cambio de estilo para el boton del call to action
@@ -64,12 +65,22 @@ function loadSideMenuContent() {
   // Asigna el contenido al menú lateral
   sideMenu.innerHTML = sideMenuContent;
 }
+//Cambio de Servicios de mobile a desktop
+function hideServicesList() {
+  servicesList.classList.add("d-none");
+}
+function showServicesList() {
+  servicesList.classList.remove("d-none");
+}
+
 function handleScreenSizeChange() {
   if (window.innerWidth > 992) {
     loadSideMenuContent();
     showSideMenu();
+    hideServicesList();
   } else if (window.innerWidth <= 768) {
     hideSideMenu();
+    showServicesList();
   }
 }
 
@@ -80,28 +91,32 @@ window.addEventListener("resize", handleScreenSizeChange);
 handleScreenSizeChange();
 
 ///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA///CODIGO DE WORK GOMPA
+const allOptions = document.querySelectorAll(".dropdown-item");
+const allImg = document.querySelectorAll(".img-item");
+const descriptionParragraph = document.querySelectorAll(".TextParragraph");
+
 function toggleClass(elementId) {
-  const allP = document.querySelectorAll(".txt.servicio-parrafo");
-  const allImg = document.querySelectorAll(".img-service img");
-
-  allP.forEach((p) => {
-    if (p.id === elementId) {
-      p.classList.remove("no-mostrar");
-      p.classList.add("mostrar");
+  for (let i = 0; i <= allImg.length - 1; i++) {
+    if (allImg[i].id.slice(-1) === elementId) {
+      allImg[i].classList.remove("d-none");
     } else {
-      p.classList.remove("mostrar");
-      p.classList.add("no-mostrar");
+      allImg[i].classList.add("d-none");
     }
-  });
+  }
 
-  allImg.forEach((img) => {
-    const imgId = img.id.replace("img-", "p-");
-    if (imgId === elementId) {
-      img.classList.remove("no-mostrar");
-      img.classList.add("mostrar");
+  descriptionParragraph.forEach((DescriptionIndividual, i) => {
+    if (DescriptionIndividual.id.slice(-1) === elementId) {
+      DescriptionIndividual.classList.remove("d-none");
     } else {
-      img.classList.remove("mostrar");
-      img.classList.add("no-mostrar");
+      DescriptionIndividual.classList.add("d-none");
     }
   });
 }
+//Bucle para iterar los clickevents
+allOptions.forEach((item) => {
+  const itemId = item.id;
+  const numeroIdDeItem = `${itemId.slice(-1)}`;
+  item.addEventListener("click", () => {
+    toggleClass(numeroIdDeItem);
+  });
+});
