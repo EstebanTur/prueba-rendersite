@@ -4,9 +4,12 @@ body {
   font-family: "poppins";
   text-align: center;
   height: 100%;
-
-  /* SIDE MENU */
 }
+.d-none {
+  display: none !important;
+}
+
+/* SIDE MENU */
 .side-menu {
 }
 .side-menu a {
