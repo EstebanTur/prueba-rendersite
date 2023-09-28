@@ -4,15 +4,15 @@ const main = document.querySelector(".main");
 const socialIcons = document.querySelector(".social-icons");
 const callToActionButton = document.querySelector(".action-button-container");
 const whatsappContainer = document.querySelector(".whatsapp-container");
-const servicesList = document.getElementById("services-dropdown-container");
+const servicesList = document.getElementById("services-dropdown-menu");
 
 // Función para ocultar el navbar y mostrar el menú lateral en pantallas grandes
 function showSideMenu() {
   navbar.classList.add("d-none"); // Oculta el navbar
   sideMenu.classList.remove("d-none");
-  sideMenu.classList.add("col-2"); // Muestra el menú lateral
+  sideMenu.classList.add("col-lg-2"); // Muestra el menú lateral
   main.classList.remove("col-12"); // Cambia el ancho del main a 10 columnas
-  main.classList.add("col-10");
+  main.classList.add("col-lg-10");
   //Cambio de estilos para el body
   document.body.classList.add("bodystyle");
   //cambio de estilos para el main
@@ -59,28 +59,42 @@ function loadSideMenuContent() {
       </div>
     </div>
   </div>
-  
+
   `;
 
   // Asigna el contenido al menú lateral
   sideMenu.innerHTML = sideMenuContent;
 }
+
+//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES
+//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES
+
 //Cambio de Servicios de mobile a desktop
 function hideServicesList() {
-  servicesList.classList.add("d-none");
+  servicesList.classList.add("displayNone");
 }
 function showServicesList() {
-  servicesList.classList.remove("d-none");
+  servicesList.classList.remove("displayNone");
 }
 
+//REPONSIVE; SEGUN EL TAMAÑO DE PANTALLA PONGO DISPLAY A ELEMENTOS, Y SACO DISPLAY DE OTROS
 function handleScreenSizeChange() {
   if (window.innerWidth > 992) {
-    loadSideMenuContent();
-    showSideMenu();
-    hideServicesList();
+    loadSideMenuContent(); //CREO HTML DENTRO DEL DIV "SIDEMENU"
+    showSideMenu(); //AGREGO EL SIDE MENU, BORRO EL NAV RESPONSIVE, CAMBIO COLUMNAS DE MAIN Y SIDE PARA QUE SE VEA MEJOR
+    //Remueve el display none de texto descriptivo
+    //PAGINA DE SERVICIOS //PAGINA DE SERVICIOS
+    hideServicesList(); //EN PANTALLA GRANDE OCULTO EL BOTON DE SERIVICIOS Y SACO LA CLASE DROPDOWN DE LA LISTA
   } else if (window.innerWidth <= 768) {
     hideSideMenu();
     showServicesList();
+    document.getElementById("container-descriptivo").classList.add("d-none");
+  } else {
+    // Rango intermedio (768px - 992px)
+    navbar.classList.remove("d-none"); // Muestra el navbar
+    sideMenu.classList.add("d-none"); // Oculta el menú lateral
+    // hideServicesList();
+    document.getElementById("container-descriptivo").classList.remove("d-none");
   }
 }
 

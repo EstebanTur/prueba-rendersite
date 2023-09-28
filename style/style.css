@@ -146,6 +146,14 @@ body {
   color: aliceblue;
   text-decoration: none;
 }
+@media (min-width: 992px) {
+  .displayNone {
+    display: none !important;
+  }
+  #services-dropdown-container {
+    display: none !important;
+  }
+}
 
 /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */
 @media (min-width: 768px) {

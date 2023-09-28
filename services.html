@@ -102,8 +102,8 @@
         </nav>
         <!-- main --><!-- main --><!-- main --><!-- main --><!-- main --><!-- main -->
         <main class="main container-fluid col-12 col-md-8">
-          <div class="container px-0">
-            <div class="container px-0">
+          <div class="container-fluid pe-1">
+            <div class="container px-0 col-12">
               <h2 class="">Services TITULAR</h2>
               <p class="">
                 lorem ipsum akala kalalalorem imsum akalaka klaka kajaka aakljsd
@@ -111,9 +111,12 @@
                 jsjja puto el que lee
               </p>
             </div>
-            <div class="col-12">
-              <div class="container">
-                <div class="container mb-2 px-0 col-lg-6 me-0">
+            <div class="col-12 container-fluid">
+              <div class="row">
+                <div
+                  id="left-column-service"
+                  class="container mb-2 px-0 col-md-6 me-2 m-md-0"
+                >
                   <h2 class="">Services</h2>
                   <p class="">
                     lorem ipsum akala kalalalorem imsum akalaka klaka kajaka
@@ -121,13 +124,16 @@
                     kajaka aakljsd jsjja puto el que lee
                   </p>
                 </div>
+                <div id="desktop-mainjsCreater-list " class="d-none">
+                  <!-- agregar con js aca una ul -->
+                </div>
                 <div
                   id="services-dropdown-container"
                   class="dropdown container px-0"
                 >
                   <button
                     type="button"
-                    class="btn dropdown-toggle btn-dark"
+                    class="btn dropdown-toggle btn-dark d-md-none"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -136,7 +142,7 @@
                   </button>
                   <ul
                     id="services-dropdown-menu"
-                    class="dropdown-menu dropdown-menu-dark bg-transparent mx-auto"
+                    class="dropdown-menu dropdown-menu-dark bg-transparent mx-auto d-md-none"
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <li class="dropdown-item" id="item-1">
@@ -168,29 +174,29 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-6 container col-lg-3">
-                  <p id="txt-1" class="TextParragraph d-none">
+                <div id="container-descriptivo" class="container-fluid col-6">
+                  <p id="txt-1" class="TextParragraph">
                     Texto descriptivo numero 1.Texto descriptivo numero 1.
                   </p>
-                  <p id="txt-2" class="TextParragraph d-none">
+                  <p id="txt-2" class="TextParragraph">
                     Texto descriptivo numero 2.Texto descriptivo numero 2.
                   </p>
-                  <p id="txt-3" class="TextParragraph d-none">
+                  <p id="txt-3" class="TextParragraph">
                     Texto descriptivo numero 3.Texto descriptivo numero 3.
                   </p>
-                  <p id="txt-4" class="TextParragraph d-none">
+                  <p id="txt-4" class="TextParragraph">
                     Texto descriptivo numero 4.Texto descriptivo numero 4.
                   </p>
-                  <p id="txt-5" class="TextParragraph d-none">
+                  <p id="txt-5" class="TextParragraph">
                     Texto descriptivo numero 5.Texto descriptivo numero 5.
                   </p>
-                  <p id="txt-6" class="TextParragraph d-none">
+                  <p id="txt-6" class="TextParragraph">
                     Texto descriptivo numero 6.Texto descriptivo numero 6.
                   </p>
-                  <p id="txt-7" class="TextParragraph d-none">
+                  <p id="txt-7" class="TextParragraph">
                     Texto descriptivo numero 7.Texto descriptivo numero 7.
                   </p>
-                  <p id="txt-8" class="TextParragraph d-none">
+                  <p id="txt-8" class="TextParragraph">
                     Texto descriptivo numero 8.Texto descriptivo numero 8.
                   </p>
                   <p id="txt-9" class="TextParragraph d-none">
@@ -198,62 +204,62 @@
                   </p>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-1"
-                  src="./img/001_CASA_ALFREDO_BERN_CAM_ESTAR_00.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-2"
-                  src="./img/001_BOC_COMEDOR_LN_NS_CAM02.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-3"
-                  src="./img/001_CASA_ALFREDO_BERN_CAM_FRENTEO_01.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-4"
-                  src="./img/004_CASA_MAGDALENA_DAY_COC_01_02.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-5"
-                  src="./img/004_CASA_MAGDALENA_DAY_COC_02_01.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-6"
-                  src="./img/004_CASA_MAGDALENA_DAY_COC_03_00.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-7"
-                  src="./img/005_CASA_DALVIAN_CAM_04_PATIO_03.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-8"
-                  src="./img/005_CASA_DALVIAN_CAM_05_GALERIA_01.jpg"
-                  alt=""
-                />
-                <img
-                  class="img-fluid d-none img-item"
-                  id="img-9"
-                  src="./img/021_440_JS_FOUNDATION_01.jpg"
-                  alt=""
-                />
-              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <img
+                class="img-fluid img-item d-none d-block"
+                id="img-1"
+                src="./img/001_CASA_ALFREDO_BERN_CAM_ESTAR_00.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-2"
+                src="./img/001_BOC_COMEDOR_LN_NS_CAM02.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-3"
+                src="./img/001_CASA_ALFREDO_BERN_CAM_FRENTEO_01.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-4"
+                src="./img/004_CASA_MAGDALENA_DAY_COC_01_02.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-5"
+                src="./img/004_CASA_MAGDALENA_DAY_COC_02_01.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-6"
+                src="./img/004_CASA_MAGDALENA_DAY_COC_03_00.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-7"
+                src="./img/005_CASA_DALVIAN_CAM_04_PATIO_03.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-8"
+                src="./img/005_CASA_DALVIAN_CAM_05_GALERIA_01.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid d-none img-item d-md-block"
+                id="img-9"
+                src="./img/021_440_JS_FOUNDATION_01.jpg"
+                alt=""
+              />
             </div>
           </div>
         </main>
