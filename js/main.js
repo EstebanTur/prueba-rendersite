@@ -4,7 +4,7 @@ const main = document.querySelector(".main");
 const socialIcons = document.querySelector(".social-icons");
 const callToActionButton = document.querySelector(".action-button-container");
 const whatsappContainer = document.querySelector(".whatsapp-container");
-const servicesList = document.querySelector("#services-dropdown-container");
+const servicesList = document.getElementById("services-dropdown-container");
 
 // Función para ocultar el navbar y mostrar el menú lateral en pantallas grandes
 function showSideMenu() {
