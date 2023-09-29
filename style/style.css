@@ -2,7 +2,7 @@ body {
   background-color: #000000;
   color: aliceblue;
   font-family: "poppins";
-  text-align: center;
+
   height: 100%;
 }
 .d-none {
@@ -127,6 +127,9 @@ body {
 .action-button-container-desktop {
 }
 @media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
   .action-button-container {
     margin-top: 5vh !important;
   }
@@ -136,8 +139,8 @@ body {
 .dropdown-menu {
   position: relative !important;
 }
-.services-dropdown-container {
-}
+/* .services-dropdown-container {
+} */
 .dropdown-item {
   position: relative;
   text-decoration: none;

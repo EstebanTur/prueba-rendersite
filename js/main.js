@@ -1,5 +1,8 @@
 const navbar = document.querySelector(".navbar");
 const sideMenu = document.querySelector(".side-menu");
+const desktopMainjsCreatedList = document.getElementById(
+  "desktopMainjsCreatedList"
+);
 const main = document.querySelector(".main");
 const socialIcons = document.querySelector(".social-icons");
 const callToActionButton = document.querySelector(".action-button-container");
@@ -61,9 +64,20 @@ function loadSideMenuContent() {
   </div>
 
   `;
-
+  const desktopMainJsCreatedlistContent = `
+<div>
+  <ul>
+  <li>Webbalbalabl</li>
+  <li> Render especial</li>
+  <li> Asado del medio</li>
+  <li>otra cosa tmb</li>
+  <li>Falopa en polvo</li>
+  </ul>
+</div>`;
+  desktopMainjsCreatedList.innerHTML = desktopMainJsCreatedlistContent;
   // Asigna el contenido al menú lateral
   sideMenu.innerHTML = sideMenuContent;
+  desktopMainjsCreatedList.classList.remove("d-none");
 }
 
 //SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES//SERVICES
@@ -89,6 +103,7 @@ function handleScreenSizeChange() {
     hideSideMenu();
     showServicesList();
     document.getElementById("container-descriptivo").classList.add("d-none");
+    desktopMainjsCreatedList.classList.add("d-none");
   } else {
     // Rango intermedio (768px - 992px)
     navbar.classList.remove("d-none"); // Muestra el navbar
