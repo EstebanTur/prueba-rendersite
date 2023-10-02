@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body class="bodystyle">
     <div class="container-fluid p-0">
       <div class="row mx-0 w-100">
         <div class="side-menu d-none mx-0 col-lg-2 col-md-4 container-fluid">
@@ -95,89 +95,77 @@
             </div>
           </div>
         </nav>
-        <main class="main container">
-          <div class="contact-page">
-            <div class="title animate-entry">
-              <h1>Contact</h1>
-            </div>
-            <div class="contact-content">
-              <div class="contact-text animate-entry">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Nulla facilisi. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nulla facilisi.Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit. Nulla facilisi. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Nulla facilisi.
-                </p>
+        <main class="container col-12 col-md-8 mt-1 mt-md-5 p-0">
+          <div class="contact-page row">
+            <div class="col-12 col-md-4">
+              <div class="">
+                <h1>Contact</h1>
               </div>
-              <div class="contact-details animate-entry">
-                <div class="contact-box">
-                  <h2>Consulta</h2>
-                  <p>Description 1s</p>
-                  <a href="mailto:email1@example.com"
-                    >javierabalos.ar@gmail.com</a
-                  >
+              <div class="contact-content">
+                <div class="contact-text animate-entry">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla facilisi. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla facilisi. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla facilisi. Lorem ipsum
+                  </p>
                 </div>
-                <div class="contact-box">
-                  <h2>Area 2</h2>
-                  <p>Description 2</p>
-                  <a href="mailto:email2@example.com">email2@example.com</a>
-                </div>
-                <div class="contact-box">
-                  <h2>Area 3</h2>
-                  <p>Description 2</p>
-                  <a href="mailto:email2@example.com">email2@example.com</a>
-                </div>
-                <div class="contact-box">
-                  <h2>Area 4</h2>
-                  <p>Description 2</p>
-                  <a href="mailto:email2@example.com">email2@example.com</a>
+                <div class="contact-details">
+                  <div class="contact-box mt-2 mb-5 mt-md-5">
+                    <h2 class="h5">Gonzalo Rancor</h2>
+                    <p class="mb-1">Operador</p>
+                    <a
+                      class="text-decoration-none text-white"
+                      href="mailto:email2@example.com"
+                      >email2@example.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="animate-entry">
-              <h2 class="subtitle">Contact Form</h2>
-              <form
-                class="contact-form"
-                action="./css/enviar.php"
-                method="POST"
-              >
-                <div class="mb-3">
-                  <label class="form-label" for="name">Name</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label" for="email">Email</label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label" for="message">Message</label>
-                  <textarea
-                    class="form-text form-control"
-                    id="message"
-                    name="message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-secondary">Submit</button>
-              </form>
+            <div class="col-12 col-md-8">
+              <div class="container">
+                <h2 class="h2 text-left">Contact Form</h2>
+                <form
+                  class="contact-form w-100 m-0"
+                  action="./css/enviar.php"
+                  method="POST"
+                >
+                  <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input
+                      class="form-control bg-transparent text-white"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      class="form-control bg-transparent text-white"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      class="form-text form-control bg-transparent text-white"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </main>

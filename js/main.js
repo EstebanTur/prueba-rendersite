@@ -10,6 +10,7 @@ const descriptionService = document.querySelectorAll(".TextParragraph");
 const images = document.querySelectorAll(".img-item");
 const allOptions = document.querySelectorAll(".dropdown-item");
 const containerDescriptivo = document.getElementById("container-descriptivo");
+const gridItem = document.querySelectorAll(".grid-item");
 
 // Función para ocultar el navbar y mostrar el menú lateral en pantallas grandes
 function showSideMenu() {
@@ -73,7 +74,7 @@ function loadSideMenuContent() {
 function loadListContent() {
   const serviceSubDescriptionContent = `
 <div>
-<h3>Services title</h3>
+<h3 class="h5" >Services title</h3>
   <p>3D Modeling of exterior an interior lorem created in sketchup3D Modeling of exterior</p>
 </div>`;
   serviceSubDescription.classList.remove("d-none");
@@ -176,3 +177,10 @@ window.addEventListener("resize", handleScreenSizeChange);
 
 // Inicialmente, verifica el tamaño de la pantalla
 handleScreenSizeChange();
+
+//Work Section//Work Section//Work Section//Work Section//Work Section//Work Section//Work Section//Work Section//Work Section//Work Section
+lightbox.option({
+  resizeDuration: 200,
+  wrapAround: true,
+  disableScrolling: true,
+});
