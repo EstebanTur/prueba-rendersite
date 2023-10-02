@@ -46,10 +46,10 @@ function loadSideMenuContent() {
   <div class=" fixed-left  d-flex flex-column   ">
     <a class="navbar-brand" href="/index.html"><img src="./img/logo menu.png" height="30px" alt="" /></a>
       <ul class="list-unstyled navbar-nav justify-content-end ">
-        <li class="my-3"><a href="/index.html" class="my-2 text-decoration-none">Home</a></li>
-        <li class="my-3"><a href="/work.html" class="my-2 text-decoration-none">Work</a></li>
-        <li class="my-3"><a href="/services.html" class="my-2 text-decoration-none">Services</a></li>
-        <li class="my-3"><a href="/contact.html" class="my-2 text-decoration-none">Contact</a></li>
+        <li class="my-3"><a href="./index.html" class="my-2 text-decoration-none">Home</a></li>
+        <li class="my-3"><a href="./work.html" class="my-2 text-decoration-none">Work</a></li>
+        <li class="my-3"><a href="./services.html" class="my-2 text-decoration-none">Services</a></li>
+        <li class="my-3"><a href="./contact.html" class="my-2 text-decoration-none">Contact</a></li>
       </ul>
     <div class="social-icons-container">
       <div class="inner-social-icons-container">
