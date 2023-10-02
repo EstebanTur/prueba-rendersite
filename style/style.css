@@ -168,9 +168,6 @@ li:hover {
 .displayNone {
   display: none !important;
 }
-.initial-color {
-  color: red !important;
-}
 
 @media (min-width: 992px) {
   #services-dropdown-container {
